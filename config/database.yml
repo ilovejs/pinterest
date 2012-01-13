@@ -6,7 +6,7 @@
 development:
   adapter: mysql
   encoding: utf8
-  database: sample_app
+  database: pinterest_dev
   pool: 5
   username: root
   password: root
@@ -18,7 +18,7 @@ development:
 test:
   adapter: mysql
   encoding: utf8
-  database: sample_app
+  database: pinterest_test
   pool: 5
   username: root
   password: root
@@ -27,7 +27,7 @@ test:
 production:
   adapter: mysql
   encoding: utf8
-  database: sample_app
+  database: pinterest_pro
   pool: 5
   username: root
   password: root
