@@ -1,0 +1,95 @@
+#header {
+	display:none;
+}
+a {
+	color:#c02d0e;
+}
+#login,#reg {
+	width:560px;
+	margin:80px auto 20px;
+	padding:15px 30px;
+	border:2px solid #ccc;
+	zoom:1;
+	background-color:#fff;
+	border-radius:10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+}
+#login:after,#reg:after {
+	content:'\20';
+	display:block;
+	height:0;
+	clear:both;
+}
+#reg {
+	width:900px;
+}
+#login h2,#reg h2 {
+	margin-bottom:20px;
+	font-size:24px;
+	font-weight:700;
+}
+.auth_mk {
+	float:left;
+	width:340px;
+}
+#reg .auth_mk {
+	width:600px;
+}
+.auth_mk li {
+	padding:0 0 10px 6em;
+	zoom:1;
+}
+.auth_mk li li {
+	padding-left:0;
+}
+.auth_mk li:after {
+	content:'\20';
+	display:block;
+	height:0;
+	clear:both;
+}
+.auth_mk label {
+	float:left;
+	width:6em;
+	height:28px;
+	line-height:28px;
+	margin-left:-6em;
+	text-align:center;
+	font-size:14px;
+}
+.auth_mk .def label {
+	float:none;
+	margin-left:0;
+	font-size:12px;
+}
+.auth_mk li span {
+	color:#979797;
+	font-size:90%;
+}
+.auth_mk .error {
+	color:#f00;
+}
+.auth_other {
+	float:right;
+	width:220px;
+}
+.auth_other li {
+	padding-bottom:5px;
+}
+.auth_other li i {
+	position:relative;
+	top:3px;
+}
+.auth_other strong {
+	font-size:110%;
+}
+.auth_other a:hover {
+	text-decoration:none;
+	color:#fff;
+	background-color:#c02d0e;
+}
+.reg-error h2 {
+	text-align:center;
+	margin:20px 0;
+}

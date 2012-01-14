@@ -1,17 +1,37 @@
-<h2>Sign in</h2>
+<%= stylesheet_link_tag    "login" %>
 
-<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email %></div>
+<div id="login">
 
-  <div><%= f.label :password %><br />
-  <%= f.password_field :password %></div>
+    <h2>登录Pinterest</h2>
+    <%= form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => { :class => "auth_mk"}) do |f| %>
+        <ul>
+            <li><%= f.label :邮箱 %><%= f.text_field :email %><span></span></li>
+            <li><%= f.label :密码 %><%= f.password_field :password %><span></span></li>
+            <% if devise_mapping.rememberable? -%>
+    			<li class="def"><%= f.check_box :remember_me %> <%= f.label :下次自动登录 %></li>
+  		<% end -%>  
+           <li>
+                <%= f.submit "登 录" %>
+                <span>
+                <%- if devise_mapping.recoverable? && controller_name != 'passwords' %>
+  				<%= link_to "忘记密码?", new_password_path(resource_name) %>
+			<% end -%>
+			</span>
+            </li>
+        </ul>
+	<% end %>
 
-  <% if devise_mapping.rememberable? -%>
-    <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
-  <% end -%>
 
-  <div><%= f.submit "Sign in" %></div>
-<% end %>
 
-<%= render :partial => "devise/shared/links" %>
+    <ul class="auth_other">
+        <li>
+        <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+        <%= link_to "注册帐号", new_registration_path(resource_name) %>
+        <% end -%>
+        </li>
+        <li><strong>或其他账号登录</strong></li>
+        <li><i class="icon_db"></i><a href="#">豆瓣登录</a></li>
+        <li><i class="icon_qq"></i><a href="#">腾讯微博登录</a></li>
+        <li><i class="icon_wb"></i><a href="#">新浪微博登录</a></li>
+    </ul>
+</div>
