@@ -1,25 +1,59 @@
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
+<%= stylesheet_link_tag    "setting" %>
+
+<%= render 'layouts/menu' %>
+
+
+<div id="content" class="section">
+    
+<div id="nav">
+    <div>
+        <p>
+            <a href="/user/edit.action" class="selected">个人信息</a>
+            <em class="dot">●</em>
+            <a href="/user/apps.action">应用授权</a>
+        </p>
+    </div>
+</div>
+
+<div id="edit" class="settings">
+<h2>个人信息</h2>
 
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
   <%= devise_error_messages! %>
 
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email %></div>
+  <div class="form-item">
+        <%= f.label :用户名 %><%= f.text_field :username %><span></span>
+  </div>
+  <div class="form-item">
+        <%= f.label :头像 %>#####
+  </div>
+  <div class="form-item">
+        <%= f.label :邮箱 %><%= f.text_field :email %><span></span>
+  </div>
 
-  <div><%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
-  <%= f.password_field :password %></div>
-
-  <div><%= f.label :password_confirmation %><br />
-  <%= f.password_field :password_confirmation %></div>
-
-  <div><%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-  <%= f.password_field :current_password %></div>
-
-  <div><%= f.submit "Update" %></div>
+   <div class="form-item">
+    <%= f.label :当前密码 %>
+    <%= f.password_field :current_password %>
+  </div>
+  <div class="form-item">
+        <%= f.label :新密码 %><%= f.password_field :password %><span></span>
+  </div>
+  <div class="form-item">
+    <%= f.label :确认密码 %>
+    <%= f.password_field :password_confirmation %>
+  </div>
+ 
+  <div class="form-item"><%= f.label :个人站点 %><%= f.text_field :website %><span></span></div>
+  <div class="form-item"><%= f.label :所在地 %><%= f.text_field :city %><span></span></div>
+  <div class="form-item">
+    <%= f.label :自我介绍 %><%= f.text_area :intro %>
+    <span></span>
+  </div>
+  <div class="form-item">
+    <%= f.label :邮件提醒 %>
+    <%= f.check_box :notified %>&nbsp;是否接收来自Pinterest的提醒
+    <span></span>
+  </div>
+  <div><%= f.submit "更新个人信息" %></div>
 <% end %>
 
-<h3>Cancel my account</h3>
-
-<p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), :confirm => "Are you sure?", :method => :delete %>.</p>
-
-<%= link_to "Back", :back %>

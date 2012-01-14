@@ -1,0 +1,273 @@
+.settings {
+	border-top:2px solid #111;
+	background-color:white;
+	padding:10px 20px 50px;
+	margin-bottom:20px;
+}
+.image {
+	float:right;
+	width:192px;
+	padding:15px;
+}
+.settings {
+	float:left;
+	width:568px;
+}
+#edit {
+	float:none;
+	width:auto;
+}
+#edit form ul.error {
+	padding-left:135px;
+	color:red;
+}
+.settings h2 {
+	padding:20px 0 13px;
+	margin:0;
+	font-size:24px;
+	font-weight:bold;
+	line-height:100%;
+}
+.settings h2 .btn {
+	float:right;
+	font-size:12px;
+	line-height:1.5;
+}
+.settings p,.settings div {
+	margin-bottom:0;
+	font-size:14px;
+	border-top:1px solid #E8E7E3;
+	padding:11px 0;
+	line-height:22px;
+	position:relative;
+}
+.settings .form-item {
+	zoom:1;
+}
+.settings .form-item:after {
+	content:'\20';
+	display:block;
+	height:0;
+	clear:both;
+}
+.settings .image {
+	float:right;
+	border-width:0;
+}
+.settings label {
+	float:left;
+	width:135px;
+	font-weight:bold;
+}
+.settings input[type="text"] {
+	width:415px;
+}
+.settings textarea {
+	width:550px;
+	height:120px;
+}
+#edit textarea,#edit input[type="text"],#edit input[type="password"] {
+	width:360px;
+}
+.settings div ul {
+	margin-left:133px;
+}
+.settings div ul li {
+	display:block;
+	padding:4px 0;
+}
+.settings div ul li label {
+	float:none;
+	width:auto;
+	cursor:pointer;
+}
+.settings .actions {
+	padding-left:135px;
+}
+.help div,.help p {
+	border-width:0;
+}
+.help a {
+	color:#c02d0e;
+}
+.auth .hd,.auth .hd p {
+	border-width:0;
+	margin:0;
+	padding:0;
+}
+.auth .auth-list {
+	border-width:0;
+}
+.auth .auth-list img {
+	margin-right:20px;
+	vertical-align:middle;
+}
+.auth .invint {
+	margin-top:10px;
+	width:500px;
+}
+.auth .invint ul {
+	margin:0 0 10px;
+}
+.auth .invint li {
+	position:relative;
+	z-index:1;
+	padding:0 0 10px 60px;
+	margin-top:10px;
+	zoom:1;
+	border-bottom:1px solid #e7e7e7;
+}
+.auth .invint .btn {
+	position:absolute;
+	right:0;
+	top:15px;
+}
+.auth li:after {
+	content:'\20';
+	display:block;
+	height:0;
+	clear:both;
+}
+.auth li img {
+	float:left;
+	width:50px;
+	height:50px;
+	margin-left:-60px;
+}
+.auth strong {
+	display:block;
+	margin-bottom:5px;
+}
+.user-avatar {
+	position:relative;
+	display:inline-block;
+	width:400px;
+}
+#bigdiv {
+	display:inline-block;
+}
+#bigimg {
+	max-width:192px;
+	max-height:192px;
+	border:1px solid #eee;
+}
+#prediv {
+	display:none;
+	width:30px;
+	height:30px;
+	overflow:hidden;
+	border:1px solid #eee;
+	margin:0 10px;
+}
+#edit .activity {
+	border-width:0;
+}
+#edit .activity ul {
+	margin:0;
+}
+#edit .activity li img {
+	float:left;
+	margin-right:5px;
+}
+#edit .activity li {
+	height:50px;
+	margin-bottom:10px;
+	padding:0;
+	clear:both;
+}
+#edit .activity ol {
+	margin:20px 50px 50px;
+}
+#invint_li {
+	display:none;
+}
+#invint_li span {
+	display:block;
+	color:#f00;
+}
+#invint_li .switch {
+	border-width:0;
+}
+#invint_li .switch a {
+	color:#c02d0e;
+}
+#invint_li .switch a:hover {
+	color:#fff;
+	text-decoration:none;
+	background-color:#c02d0e;
+}
+#invint_li .switch a.selected {
+	font-weight:700;
+	color:#000;
+	background-color:#fff!important;
+}
+#invint_user {
+	width:200px!important;
+}
+#invint_li .users {
+	padding:0;
+	border-width:0;
+	zoom:1;
+	max-height:170px;
+	overflow:auto;
+}
+#invint_li .users:after {
+	content:'\20';
+	display:block;
+	height:0;
+	clear:both;
+}
+#invint_li .user {
+	position:relative;
+	border-width:0;
+	padding:5px 5px 0 0;
+	float:left;
+	width:50px;
+	height:50px;
+	overflow:hidden;
+}
+#invint_li .panel {
+	display:none;
+	padding:10px;
+	margin-bottom:5px;
+	background-color:#eee;
+}
+#invint_li .panel .user {
+	padding:0 5px 5px 0;
+}
+#invint_li .user a,#invint_li .user a img {
+	display:block;
+}
+#invint_li .user a:hover {
+	text-decoration:none;
+}
+#invint_li .user a:hover span {
+	display:block;
+}
+#invint_li .user span {
+	display:none;
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:50px;
+	height:16px;
+	padding:0;
+	text-align:center;
+	line-height:16px;
+	font-size:12px;
+	color:#fff;
+	background-color:transparent;
+	background-color:rgba(127,122,122,0.8);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f7A7A7A,endColorstr=#7f7A7A7A);
+	zoom:1;
+}
+#invint_li .panel .user span {
+	top:0;
+	height:50px;
+	line-height:50px;
+}
+#users {
+	padding-top:10px!important;
+	margin-top:10px;
+	border-top:1px solid #ccc!important;
+}
