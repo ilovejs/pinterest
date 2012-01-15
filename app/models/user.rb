@@ -12,5 +12,5 @@ class User < ActiveRecord::Base
   				:length => { :maximum => 50 }, 
   				:uniqueness => { :case_sensitive => false }
   
-
+  has_many :boards
 end
